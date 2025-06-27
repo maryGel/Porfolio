@@ -3,3 +3,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components{
+  .nav-item{
+    @apply block px-7 py-2 text-white transition rounded-md cursor-pointer bg-black/90 hover:opacity-80 hover:font-semibold
+  }
+}
