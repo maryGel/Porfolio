@@ -20,7 +20,7 @@ function HomePage() {
           <p>React Developer</p>
           <p
             className='mt-2 font-serif text-2xl leading-relaxed'
-            >Hi, I'm Angel!
+            >Hi, I'm Angel!! 
           </p>
           <p className={`pt-5 leading-relaxed ${!showMore ? 'line-clamp-2' : ''}`}>{intro}</p>  
           <button
