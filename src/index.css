@@ -7,6 +7,6 @@
 
 @layer components{
   .nav-item{
-    @apply block px-7 py-2 text-white transition rounded-md cursor-pointer bg-black/90 hover:opacity-80 hover:font-semibold
+    @apply block px-7 py-2 text-white transition rounded-md cursor-pointer bg-black/90 hover:text-yellow-300 hover:opacity-80 hover:font-semibold
   }
 }

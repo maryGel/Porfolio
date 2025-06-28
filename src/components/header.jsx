@@ -8,10 +8,11 @@ function Header({
 
 
   return(
-    <>
-      <header className='fixed top-0 z-10 w-full px-4 py-4'>
-        <nav className='container flex justify-end text-white'>
-          <div className='mt-5 mr-5'>
+    <div className={`bg-[url('/images/Background.jpg')] 
+      bg-cover bg-center h-28 w-full flex antialiased`}>
+      <header className='fixed top-0 z-10 w-full'>
+        <nav className='container flex justify-end font-light text-white '>
+          <div className='mt-10 mr-5'>
             <button
               className={`cursor-pointer md:hidden w-5`}
               onClick={() => setOpenMenu(!openMenu)}
@@ -24,13 +25,16 @@ function Header({
   
           </div>
 
-          <ul className='hidden space-x-4 md:flex'
+          <ul className={`hidden space-x-12 bg-black/50  md:flex mt-10  px-16 py-5 rounded-lg
+              `}
             open={openMenu}
           >
             {
               menuItems.map((item) => (
                 <li>
-                  <a href={item.href}>{item.label}</a>
+                  <a href={item.href}
+                    className='text-sm font-semibold lg:text-base hover:text-yellow-400 hover:underline hover:font-semibold'
+                  >{item.label}</a>
                 </li>
               ))
             }
@@ -55,7 +59,7 @@ function Header({
             
       />
 
-    </>
+    </div>
   );
 }
 

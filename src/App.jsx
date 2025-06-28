@@ -1,6 +1,8 @@
 import Header from './components/Header';
+import HomePage from './pages/Homepage';
 import './App.css'
 import { useState } from 'react'
+
 
 function App() {
 
@@ -8,13 +10,13 @@ function App() {
 
   return (
     <div
-      className={`bg-[url('/images/Background.jpg')] 
-        bg-cover bg-center h-screen w-full overflow-x-clip antialiased`}
+      className='bg-white/80'
     >
       <Header
         openMenu = { openMenu }
         setOpenMenu = { setOpenMenu }
       />
+      <HomePage />
     </div>
   )
 }
