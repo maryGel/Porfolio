@@ -10,7 +10,7 @@ function Header({
   return(
     <div className={`bg-[url('/images/Background.jpg')] 
       bg-cover bg-center h-28 w-full flex antialiased`}>
-      <header className='fixed top-0 z-10 w-full'>
+      <header className='top-0 z-10 w-full'>
         <nav className='container flex justify-end font-light text-yellow-400 '>
           <div className='mt-10 mr-10'>
             {/* Menu button */}

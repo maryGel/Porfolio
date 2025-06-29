@@ -1,7 +1,9 @@
-import Header from './components/Header';
-import HomePage from './pages/Homepage';
 import './App.css'
 import { useState } from 'react'
+// components
+import Header from './components/Header';
+import HomePage from './pages/Homepage';
+import Projects from './pages/Projects';
 
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
         setOpenMenu = { setOpenMenu }
       />
       <HomePage />
+      <Projects />
     </div>
   )
 }
