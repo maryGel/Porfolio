@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { intro } from '../components/data';
 import MobileHome from '../components/MobileHome';
+import IconItems from '../components/Icons';
 
 function HomePage() {
   const [showMore, setShowMore] = useState(false);
@@ -35,6 +36,7 @@ function HomePage() {
         showMore ={showMore}
         setShowMore ={setShowMore}
       />
+      <IconItems />
     </>
   );
 }

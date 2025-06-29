@@ -11,10 +11,11 @@ function Header({
     <div className={`bg-[url('/images/Background.jpg')] 
       bg-cover bg-center h-28 w-full flex antialiased`}>
       <header className='fixed top-0 z-10 w-full'>
-        <nav className='container flex justify-end font-light text-white '>
-          <div className='mt-10 mr-5'>
+        <nav className='container flex justify-end font-light text-yellow-400 '>
+          <div className='mt-10 mr-10'>
+            {/* Menu button */}
             <button
-              className={`cursor-pointer md:hidden w-5`}
+              className={`cursor-pointer absolute md:hidden w-5`}
               onClick={() => setOpenMenu(!openMenu)}
               aria-label="Toggle Menu"
               aria-controls="nav-menu"
@@ -33,7 +34,7 @@ function Header({
               menuItems.map((item) => (
                 <li>
                   <a href={item.href}
-                    className='text-sm font-semibold lg:text-base hover:text-yellow-400 hover:underline hover:font-semibold'
+                    className='text-sm font-semibold lg:text-base hover:text-white hover:underline hover:font-semibold'
                   >{item.label}</a>
                 </li>
               ))
