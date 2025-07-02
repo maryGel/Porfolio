@@ -8,15 +8,15 @@ function HomePage() {
 
   return (
     <>
-      <div className={`bg-[url('/images/Background.jpg')] hidden w-full md:flex mt-20`}>
+      <div className={`bg-[url('/images/Background.jpg')] object-cover hidden w-full md:flex mt-20`}>
         <img src="/images/Profile.jpg"
           className={`rounded-full ml-10 my-10 shadow-2xl w-64 h-64 border 
             scale-100  md:scale-100 lg:scale-125
-            lg:my-20 lg:ml-32 
+            lg:my-20 lg:ml-32 animate-slide-right animation-delay-1000
             `}
         />
         <div className={`px-10 py-20 text-xs leading-relaxed text-white font-light
-          lg:pl-20 lg:pr-28 lg:pt-32 xl:text-xl lg:text-base
+          lg:pl-20 lg:pr-32 lg:pt-32 xl:text-xl lg:text-base animate-slide-left animation-delay-1000
           `}>
           <p>React Developer</p>
           <p

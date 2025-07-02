@@ -5,9 +5,9 @@ function MobileHome({showMore, setShowMore}) {
     <>
       <div className={`bg-[url('/images/Background.jpg')] w-full md:hidden mt-10 justify-center py-2`}>
         <img src="/images/Profile.jpg"
-          className={`rounded-full mx-auto shadow-2xl w-64 h-64 border 
+          className={`rounded-full mt-5 mx-auto shadow-2xl w-64 h-64 border 
             scale-75  md:scale-100 lg:scale-125
-            lg:my-20 lg:ml-32 
+            lg:my-20 lg:ml-32 animate-slide-right animation-delay-1000
             `}
         />
         <div className={`px-10 py-2 text-xs text-center leading-relaxed text-white font-light

@@ -52,19 +52,5 @@ export const projects = [
     ],
     status: "Fully functional front-end. No backend integration.",
 
-  },
-  // {
-  //   id: 3,
-  //   title: "DevBlog - Developer Blog Platform",
-  //   overview:
-  //     "DevBlog is a blogging platform where developers can write and share posts. It includes features like post creation, editing, and display with markdown support.",
-  //   features: [
-  //     "Create and edit blog posts with markdown.",
-  //     "Tag and categorize posts.",
-  //     "Responsive layout with code-friendly formatting.",
-  //   ],
-  //   status: "Prototype UI with dummy content and static data.",
-  //   purpose:
-  //     "A project to experiment with text editing and markdown rendering in a React environment."
-  // }
+  }
 ];

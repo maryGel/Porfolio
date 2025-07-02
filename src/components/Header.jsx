@@ -11,7 +11,7 @@ function Header({
     <div className={`bg-[url('/images/Background.jpg')] 
       bg-cover bg-center h-28 w-full flex antialiased`}>
       <header className='top-0 z-10 w-full'>
-        <nav className='container flex justify-end font-light text-yellow-400 '>
+        <nav className='container flex justify-end font-light text-white md:justify-center '>
           <div className='mt-10 mr-10'>
             {/* Menu button */}
             <button
@@ -26,7 +26,7 @@ function Header({
   
           </div>
 
-          <ul className={`hidden space-x-12 bg-black/50  md:flex mt-10  px-16 py-5 rounded-lg
+          <ul className={`hidden space-x-12 bg-black/70  md:flex mt-10  px-16 py-5 rounded-lg
               `}
             open={openMenu}
           >
