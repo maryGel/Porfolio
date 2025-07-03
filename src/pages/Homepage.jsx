@@ -16,11 +16,13 @@ function HomePage() {
             `}
         />
         <div className={`px-10 py-20 text-xs leading-relaxed text-white font-light
-          lg:pl-20 lg:pr-32 lg:pt-32 xl:text-xl lg:text-base animate-slide-left animation-delay-1000
+          lg:pl-20 lg:pr-32 lg:pt-28 xl:text-xl lg:text-base animate-slide-left animation-delay-1000
           `}>
-          <p>React Developer</p>
           <p
-            className='mt-2 font-serif text-2xl leading-relaxed'
+            className='text-3xl'
+          >React Developer</p>
+          <p
+            className='mt-2 font-serif text-5xl leading-relaxed'
             >Hi, I'm Angel!
           </p>
           <p className={`pt-5 leading-relaxed ${!showMore ? 'line-clamp-2' : ''}`}>{intro}</p>  

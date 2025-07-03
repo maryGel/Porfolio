@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Header from './components/Header';
 import HomePage from './pages/Homepage';
 import Projects from './pages/Projects';
+import Skills from './pages/Skills';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
       />
       <HomePage />
       <Projects />
+      {/* <Skills /> */}
     </div>
   )
 }
