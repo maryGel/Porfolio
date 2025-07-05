@@ -21,6 +21,9 @@ export default {
           lg: "2rem"
         }
       },
+      backgroundImage: {
+        'gradient-bg': "linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,.1)), url('/images/Background.jpg')",
+      },
       keyframes: {
         'slide-up': {
           '0%': { opacity: '0', transform: 'translateY(40px)' },

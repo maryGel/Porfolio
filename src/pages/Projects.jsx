@@ -2,45 +2,49 @@ import {projects} from '../components/data';
 import React, { useState } from 'react';
 
 
-function Projects() {
- 
+
+function Projects() { 
 
   const [openProjectId, setOpenProjectId] = useState(null);
-
   
   return (
-    <div  
-      id="projects" 
-      className={`
-       text-black 
-      grid grid-cols-1 md:px-20 lg:px-44 border mx-3 rounded-lg bg-gray-200 `}
-    >
+    <>
+      <div  
+        id="projects" 
+        className={`text-black grid grid-cols-1  rounded-lg bg-white
+          md:mx-10 pb-5 
+          `}
+      >
+      
       {/* Projects list */}      
       <div className={`w-full animate-slide-down animation-delay-100`}>
         <h1 
-          className={`flex justify-center w-full md:rounded-lg font-serif tracking-widest p-2 m-auto bg-gray-200 text-purple-950 list-disc list-inside`}
+          className={`flex justify-center w-full  font-serif tracking-widest p-2 md:rounded-lg lg:text-xl lg:pt-5 bg-white text-purple-950 list-disc list-inside`}
         >PROJECTS</h1>
 
         {projects.map((projectlist) => {
           return (
             <div 
               key={projectlist.id}
-              className={`m-2 rounded-lg bg-white shadow-2xl`}  
+              className={`m-6 rounded-lg bg-white shadow-2xl md:mx-5 lg:mx-10`}  
             > 
-            <div className='grid [grid-template-columns:3.5rem_1fr_3.5rem] mx-auto w-full bg-white border rounded-lg shadow-xl border-slate-300'>  
+            <div 
+                className={`grid [grid-template-columns:3.5rem_1fr_3.5rem] 
+                mx-auto w-full bg-white border rounded-lg shadow-xl border-slate-300`}
+            >  
                 <img 
                   src={projectlist.icon} 
-                  className='object-contain w-10 h-10 mx-4 my-3 md:w-24 md:h-24'
+                  className={`object-contain w-10 h-10 mx-4 my-3 md:w-12 md:h-12 md:m-4`}
                   alt="shoppic"
                 />
-                <div className='p-3 text-sm'>
+                <div className='p-3 text-sm md:py-5 md:pl-8'>
                   <p className='font-semibold'>{projectlist.name}</p>
                   <p className='text-slate-600'>{projectlist.description}</p>
                 </div>
-                <button className='mx-4 my-3'>
+                <button className='mx-4 my-3 md:m-1 '>
                   <img 
                     src="./images/projects/right-arrow.png" 
-                    className={`object-contain w-5 h-5 p-1 rounded-full shadow-md bg-slate-200 md:w-12 md:h-12
+                    className={`object-contain w-5 h-5 p-1 rounded-full shadow-md bg-slate-200
                       ${openProjectId === projectlist.id ? 'rotate-90' : ''}`}
                     alt="arrow-icon"
                     onClick={() => setOpenProjectId(openProjectId === projectlist.id ? null : projectlist.id)}
@@ -48,12 +52,12 @@ function Projects() {
                 </button>
 
             </div>
-            {console.log("Project ID:", projectlist.id, "| Has projects:", projectlist.projects)}
+            {/* {console.log("Project ID:", projectlist.id, "| Has projects:", projectlist.projects)} */}
               
+            {/* SLIDE DOWN PROJECT DETAILS */}
             {openProjectId === projectlist.id &&   projectlist.projects?.map((project) => {
                 return (
                   <>
-                    {/* PROJECT DETAILS */}
                     <div 
                         key={project.id}
                         open={openProjectId} 
@@ -84,7 +88,7 @@ function Projects() {
                           <button className='mr-6'>
                             <img 
                               src="./images/projects/right-arrow.png"
-                              className='object-contain w-5 h-5 p-1 rounded-full bg-slate-200 md:w-12 md:h-12'
+                              className='object-contain w-5 h-5 p-1 rounded-full bg-slate-200'
                             />              
                           </button>
                         </div>
@@ -96,7 +100,7 @@ function Projects() {
                           <button className='mr-6'>
                             <img 
                               src="./images/projects/right-arrow.png"
-                              className='object-contain w-5 h-5 p-1 rounded-full shadow-md bg-slate-200 md:w-12 md:h-12'
+                              className='object-contain w-5 h-5 p-1 rounded-full shadow-md bg-slate-200'
                             />              
                           </button>
                         </div>
@@ -112,7 +116,7 @@ function Projects() {
                           <button className='mr-6'>
                             <img 
                               src="./images/projects/right-arrow.png"
-                              className='object-contain w-5 h-5 p-1 rounded-full shadow-md bg-slate-200 md:w-12 md:h-12'
+                              className='object-contain w-5 h-5 p-1 rounded-full shadow-md bg-slate-200'
                             />              
                           </button>
                         </div>
@@ -127,7 +131,8 @@ function Projects() {
           );
         })}
       </div>
-    </div>
+      </div>
+    </>
   );
 }
 

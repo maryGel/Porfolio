@@ -8,9 +8,9 @@ function Header({
 
 
   return(
-    <div className={`bg-[url('/images/Background.jpg')] 
-      bg-cover bg-center h-28 w-full flex antialiased`}>
-      <header className='top-0 z-10 w-full'>
+    <div className={`bg-[url('/images/Background.jpg')] lg:bg-none 
+      bg-cover bg-center h-28 w-full flex antialiased mx-auto`}>
+      <header className='top-0 z-10 w-full '>
         <nav className='container flex justify-end font-light text-white md:justify-center '>
           <div className='mt-10 mr-10'>
             {/* Menu button */}

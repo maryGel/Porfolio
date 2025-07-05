@@ -5,6 +5,7 @@ import Header from './components/Header';
 import HomePage from './pages/Homepage';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
+import './App.css'
 
 
 function App() {
@@ -13,15 +14,16 @@ function App() {
 
   return (
     <div
-      className='bg-white/80'
+      className={`lg:mx-28 xl:mx-48`}
     >
+      
       <Header
         openMenu = { openMenu }
         setOpenMenu = { setOpenMenu }
       />
       <HomePage />
       <Projects />
-      {/* <Skills /> */}
+      <Skills />
     </div>
   )
 }

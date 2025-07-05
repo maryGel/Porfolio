@@ -15,4 +15,14 @@
   .details{
     @apply p-3 pl-5 font-thin text-xs lg:text-base tracking-wide
   }
+  body {
+    @apply bg-center bg-no-repeat bg-cover;
+  }
+  
+  @media (min-width: 1024px) {
+    body {
+      @apply bg-gradient-bg;
+    }
+  }
 }
+
