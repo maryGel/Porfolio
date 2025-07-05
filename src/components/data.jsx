@@ -84,7 +84,7 @@ export const skills = [
       "./images/skills/tailwind.png",
       "./images/skills/MUI.jpeg",
     ],
-    name: "Frontend DevelopmentFrontend Development",
+    name: "Frontend Development",
     items: [
       {
         id: 1,
