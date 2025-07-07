@@ -14,13 +14,14 @@ export const projects = [
   {
     id: 1,
     icon: "./images/projects/shopping-cart.png",
-    link: "https://myshop-ecommerce-app.vercel.app/",
     name: "E-commerce App",
     description: "React + CSS with Media Queries",
     projects: [
       {
         id: "p1",
-        title: "My Shop - E-commerce App",
+        title: "My Shop",
+        link: "https://wonderful-wisp-5be402.netlify.app/",
+        git: "https://github.com/maryGel/myshop",
         overview:
           "My Shop is a sample e-commerce application designed to simulate a basic online shopping experience. While not fully functional, the app showcases the core flow of an online retail platform—from browsing products to placing an order.",
         images: [
@@ -45,14 +46,15 @@ export const projects = [
   {
     id: 2,
     icon: "./images/projects/todo.png",
-    link: "https://myshop-ecommerce-app.vercel.app/",
     name: "To-Do App",
     description: "React + Tailwind",
 
     projects: [
       {
         id: "p2",
-        title: "TaskMaster - To-Do App",
+        title: "TaskMaster",
+        link: "https://glittering-toffee-a1662b.netlify.app/",
+        git: "https://github.com/maryGel/creative-apps",
         overview:
         "TaskMaster is a simple to-do list application that allows users to create, edit, and delete tasks. It focuses on productivity and task management with a clean UI.",
         images: [

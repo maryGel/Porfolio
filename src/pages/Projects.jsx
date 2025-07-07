@@ -12,7 +12,7 @@ function Projects() {
       <div  
         id="projects" 
         className={`text-black grid grid-cols-1  rounded-lg bg-white
-          md:mx-10 pb-5 
+          md:mx-10 pb-5
           `}
       >
       
@@ -61,15 +61,41 @@ function Projects() {
                     <div 
                         key={project.id}
                         open={openProjectId} 
-                        className={`bg-white shadow-2xl z-40 transition-all transform duration-1000 ease-in-out overflow-hidden                                    
+                        className={`bg-white shadow-2xl z-40 transition-all mt-2 transform duration-1000 ease-in-out overflow-hidden                                    
                         ${openProjectId === projectlist.id ? 'max-h-[3000px] animate-project-slide-down  scale-y-100' : 'max-h-0 scale-y-95'}`}>
 
                         {/* Project Title */}
-                        <div className='m-2 text-white bg-purple-900 rounded-t-lg'>
+                        <div className='grid [grid-template-columns:1fr_6rem_6rem] [md:grid-template-columns:1fr_8rem_8rem] md:gap-2 p-2  md:m-2 justify-items-center items-center text-white bg-purple-900 rounded-t-lg'>
                           <h1 
                             className={`
-                            font-sans text-center py-2 text-base font-semibold`}
+                            font-sans text-center pt-2 text-base font-semibold`}
                           >{project.title}</h1>
+    
+                            <button className='flex items-center justify-center gap-1 px-2 py-1 text-xs border rounded-md md:gap-2'
+                              onClick={() => {
+                                console.log('GitHub link:', project.git);
+                                window.open(project.git, '_blank')}}   
+                            >
+                              Github
+                              <img
+                                src="./images/projects/github.png" 
+                                className={`object-contain w-5 h-5 bg-transparent shadow-md bg-slate-200
+                                  `}
+                                alt="github-icon"                                                             
+                              />
+                            </button>
+                            <button className='flex items-center justify-center w-24 gap-2 p-1 text-xs border rounded-md'
+                              onClick={() => window.open(project.link, '_blank')}   
+                            >
+                              View App
+                            <img 
+                              src="./images/projects/share.png" 
+                              className={`object-contain w-5 h-5 bg-transparent shadow-md bg-slate-200
+                              `}
+                              alt="link-icon"                                                            
+                            />              
+                            </button>
+                       
                         </div>
                         {/* Scrollable project images */}
                         <div className='p-4 m-2 overflow-x-auto bg-black/50 whitespace-nowrap scroll-smooth snap-x snap-mandatory'>
@@ -85,24 +111,14 @@ function Projects() {
                         {/* project overview */}
                         <div className='flex justify-between border'>
                           <h2 className='header'>Overview</h2>  
-                          <button className='mr-6'>
-                            <img 
-                              src="./images/projects/right-arrow.png"
-                              className='object-contain w-5 h-5 p-1 rounded-full bg-slate-200'
-                            />              
-                          </button>
+
                         </div>
                         <p className='details'>{project.overview}</p>
                         
                         {/*  project features */}
                         <div className='flex justify-between border'>
                           <h2 className='header'>Features</h2>
-                          <button className='mr-6'>
-                            <img 
-                              src="./images/projects/right-arrow.png"
-                              className='object-contain w-5 h-5 p-1 rounded-full shadow-md bg-slate-200'
-                            />              
-                          </button>
+
                         </div>
                           {project.features?.map((feature, index) => (
                             <p key={index} className='details'>
@@ -113,12 +129,6 @@ function Projects() {
                         {/* project status */}
                         <div className='flex justify-between border'>
                           <h2 className='header'>Status</h2>
-                          <button className='mr-6'>
-                            <img 
-                              src="./images/projects/right-arrow.png"
-                              className='object-contain w-5 h-5 p-1 rounded-full shadow-md bg-slate-200'
-                            />              
-                          </button>
                         </div>
                           <p className='rounded-b-lg details'>{project.status}</p>
                     </div>             

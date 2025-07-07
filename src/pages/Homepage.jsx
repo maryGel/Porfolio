@@ -11,8 +11,7 @@ function HomePage() {
       <div className={`md:bg-[url('/images/Background.jpg')] lg:bg-none  hidden w-full md:flex mt-20 lg:pt-10 lg:h-auto`}>
         
         <img src="/images/Profile.jpg"
-          className={`rounded-full ml-10 my-10 shadow-2xl border w-64 h-64 md:w-52 md:h-52 lg:w-60 lg:h-60
-             md:my-20
+          className={`rounded-full ml-10 my-10 shadow-2xl border w-64 h-64 md:w-52 md:h-52 lg:w-60 lg:h-60 md:my-20
             lg:my-16 lg:ml-10 animate-slide-right animation-delay-1000 
             `}
         />
