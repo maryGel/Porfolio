@@ -29,8 +29,8 @@ function App() {
       </div>
       
         {/* arrow up */}
-        <div className='flex items-center justify-end pt-1 pb-5 pr-5 lg:pr-20 md:pb-10'>
-          <a href="#" className='border border-gray-600 rounded-full shadow-2xl cursor-pointer hover:bg-gray-200'>
+        <div className='fixed z-50 bottom-5 right-5'>
+          <a href="#" className='rounded-full shadow-2xl cursor-pointer  hover:bg-gray-200'>
           <img className='w-12 h-12 p-3 mx-auto bg-gray-100 rounded-full cursor-pointer' src="./images/contact/upload.png" />
           </a>
         </div>  
