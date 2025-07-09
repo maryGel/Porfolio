@@ -202,7 +202,7 @@ export const aboutme =[
     description: (
       <>
         <p>
-        Driven by curiosity and a desire to build practical, meaningful solutions, I'm a self-taught React developer with a background in Accountancy.
+        Driven by curiosity and a desire to build practical, meaningful solutions, I'm a <strong className='text-yellow-300'>self-taught React developer</strong> with a background in Accountancy.
         Although I hold a <strong className='text-yellow-300'>Bachelor of Science in Accountancy</strong>, much of my professional journey has revolved around project development—particularly in  
         <strong className='text-yellow-300'> testing, business requirements gathering, and technical support</strong>. In my most recent role, I provided technical support for <strong className='text-yellow-300'>ERP Systems</strong>, 
         with a special focus on the Financial (FI) modules. These experiences introduced me to the powerful connection between business needs and technical solutions, 

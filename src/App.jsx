@@ -15,21 +15,27 @@ function App() {
   const [openMenu, setOpenMenu] = useState(); //Open menu items for mobile view
 
   return (
-    <div
-      className={`lg:mx-28 xl:mx-48`}
-    >
+    <>
+      <div className={`lg:mx-28 xl:mx-48`}>
+        <Header
+          openMenu = { openMenu }
+          setOpenMenu = { setOpenMenu }
+        />
+        <HomePage />
+        <Projects />
+        <Skills />
+        <AboutMe />
+        <Contact />  
+      </div>
       
-      <Header
-        openMenu = { openMenu }
-        setOpenMenu = { setOpenMenu }
-      />
-      <HomePage />
-      <Projects />
-      <Skills />
-      <AboutMe />
-      <Contact />
-
-    </div>
+        {/* arrow up */}
+        <div className='flex items-center justify-end pt-1 pb-5 pr-5 lg:pr-20 md:pb-10'>
+          <a href="#" className='border border-gray-600 rounded-full shadow-2xl cursor-pointer hover:bg-gray-200'>
+          <img className='w-12 h-12 p-3 mx-auto bg-gray-100 rounded-full cursor-pointer' src="./images/contact/upload.png" />
+          </a>
+        </div>  
+    </>
+   
   )
 }
 

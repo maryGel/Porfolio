@@ -16,7 +16,7 @@ function AboutMe() {
         className={`w-full animate-slide-down animation-delay-100`}
       >
         <h1
-          className='flex justify-center w-full p-2 font-serif tracking-widest list-disc list-inside lg:text-white text-purple-950 md:rounded-lg lg:text-xl lg:py-5 lg:mb-5'
+          className='flex justify-center w-full p-2 mb-5 font-serif tracking-widest list-disc list-inside lg:text-white text-purple-950 md:rounded-lg lg:text-xl lg:py-5 lg:mb-5'
         >
           ABOUT ME
         </h1>

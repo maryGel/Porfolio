@@ -9,27 +9,33 @@ function Contact() {
 
           {/* Contact details */}
 
+            {/* mobile */}
           <div className='grid grid-cols-1 pt-10 text-center lg:grid-cols-3 lg:bg-white lg:rounded-xl'>
             <div className='flex items-center justify-center p-2'>
               <img className='w-8 h-8' src="./images/contact/phone.png" />
               <p className='flex p-1'> ( +63 <img className='w-6 h-6 p-1' src="./images/contact/ph-flag.png"></img> ) - 915-6619-251</p>
             </div>
+            {/* email */}
             <div className='flex items-center justify-center p-2'>
               <img className='w-8 h-8' src="./images/contact/email.png" />
-              <p className='p-2 text-blue-600 underline cursor-pointer'> caguladamaryangel@gmail.com</p>
+              <a href="mailto:caguladamaryangel@gmail.com" className='p-2 text-blue-600 underline cursor-pointer'> caguladamaryangel@gmail.com</a>
             </div>
-            <div className='flex items-center justify-center gap-4 p-2 m-auto lg:gap-12'>
-              <button className='flex items-center justify-center p-1 px-3 mx-auto my-5 text-sm border border-gray-400 rounded-lg shadow-md '>
-                <img className='w-6 h-6 ' src="./images/contact/download.png" />
-                <p className='p-2 text-purple-900'>Resume</p>
-              </button>
-              <button className='flex items-center justify-center px-3 py-1 mx-auto cursor-pointer md:px-1 '>
-                <a href="https://www.linkedin.com/in/mary-angel-cagulada-7118122b2/" target="_blank" rel="noopener noreferrer">
-                  <img className='w-10 h-10' src="./images/contact/linkedin.png" />
-                </a>
-            </button>
-            </div>
-          </div>        
+              {/* download resume + linkedin */}
+              <div className='flex items-center justify-center gap-4 p-2 m-auto lg:gap-12'>
+                <button className='flex items-center justify-center p-1 px-3 mx-auto my-5 text-sm border border-gray-400 rounded-lg shadow-md '>
+                  <img className='w-6 h-6 ' src="./images/contact/download.png" alt="dlresume"/>
+                  <a  href="/public/files/MaryAngel_Cagulada.pdf"
+                      className='p-2 text-purple-900'
+                      download="MaryAngel_Cagulada.pdf"
+                  >Resume</a>
+                </button>
+                <button className='flex items-center justify-center px-3 py-1 mx-auto cursor-pointer md:px-1 '>
+                  <a href="https://www.linkedin.com/in/mary-angel-cagulada-7118122b2/" target="_blank" rel="noopener noreferrer">
+                    <img className='w-10 h-10' src="./images/contact/linkedin.png" alt="linkedIn"/>
+                  </a>
+                </button>
+              </div>
+            </div>  
         </div>
       </div>
       
