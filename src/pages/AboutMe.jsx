@@ -22,7 +22,7 @@ function AboutMe() {
         </h1>
       </div>
         {/* About Me content */}
-      <div className={`bg-[url('/images/Background.png')] relative bg-object-cover lg:rounded-lg grid grid-cols-1`}>
+      <div className={`bg-[url('/images/Background.png')] relative bg-object-cover lg:bg-none grid grid-cols-1`}>
         {/* Background Image + Gradient Layer */}
       <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/30 via-black/80 to-black/50"></div>
         {aboutme.map((item) => {

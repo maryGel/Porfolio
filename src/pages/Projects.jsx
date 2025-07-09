@@ -9,12 +9,7 @@ function Projects() {
   
   return (
     <>
-      <div  
-        id="projects" 
-        className={`text-black grid grid-cols-1  rounded-lg pt-2 pb-5
-          md:mx-10 md:border-none
-          `}
-      >
+      <div id="projects" className={`text-black grid grid-cols-1 rounded-lg pt-2 pb-5 md:mx-10 md:border-none`}>
       
       {/* Projects list */}      
       <div className={`w-full animate-slide-down animation-delay-100`}>
@@ -66,7 +61,8 @@ function Projects() {
                         ${openProjectId === projectlist.id ? 'max-h-[3000px] animate-project-slide-down  scale-y-100' : 'max-h-0 scale-y-95'}`}>
 
                         {/* Project Title */}
-                        <div className='grid [grid-template-columns:1fr_6rem_6rem] [md:grid-template-columns:1fr_8rem_8rem] md:gap-2 p-2  md:m-2 justify-items-center items-center text-white bg-purple-900 rounded-t-lg'>
+                        <div className={`grid [grid-template-columns:1fr_6rem_6rem] [md:grid-template-columns:1fr_8rem_8rem] 
+                          md:gap-2 p-2 md:m-2 justify-items-center items-center text-white bg-purple-900 rounded-t-lg`}>
                           <h1 
                             className={`
                             font-sans text-center pt-2 text-base font-semibold`}
