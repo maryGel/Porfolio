@@ -2,7 +2,7 @@ export const menuItems = [
   {label: "Home", href:"#"},
   {label: "Projects", href:"#projects"},
   {label: "Skills", href:"#skills"},
-  {label: "About Me", href:"#about"},
+  {label: "About Me", href:"#aboutme"},
   {label: "Contact", href:"#contact"},
 ]
 
@@ -103,7 +103,7 @@ export const skills = [
       {
         id: 3,
         item: "Tools & Build Systems",
-        description: "A programming language that enables interactive web pages and is an essential part of web applications.",
+        description: "npm, Vite, Git, GitHub",
         icon: "./images/skills/javascript.png"
       }
     ]
@@ -125,7 +125,7 @@ export const skills = [
       {
         id: 2,
         item: "Oracle NetSuite",
-        description: "General Systen setups and Navigation, Supply Chain Management",
+        description: "General System setups and Navigation, Supply Chain Management",
         icon: "./images/skills/css.png"
       },
       {
@@ -195,3 +195,31 @@ export const skills = [
     ]
   }
 ];
+
+export const aboutme =[
+  {
+    id: 1,
+    description: (
+      <>
+        <p>
+        Driven by curiosity and a desire to build practical, meaningful solutions, I'm a self-taught React developer with a background in Accountancy.
+        Although I hold a <strong className='text-yellow-300'>Bachelor of Science in Accountancy</strong>, much of my professional journey has revolved around project development—particularly in  
+        <strong className='text-yellow-300'> testing, business requirements gathering, and technical support</strong>. In my most recent role, I provided technical support for <strong className='text-yellow-300'>ERP Systems</strong>, 
+        with a special focus on the Financial (FI) modules. These experiences introduced me to the powerful connection between business needs and technical solutions, 
+        ultimately inspiring me to start learning how to code.
+        <br/>
+        <br/>
+        As an introvert, I find deep focus and fulfillment in creating thoughtful, efficient software. I may still be early in my developer journey, 
+        but my curiosity and dedication keep me moving forward. My goal is to one day build applications that help people work smarter and more efficiently. 
+        <strong className='text-yellow-300'> I'm constantly learning, improving, and building—and I'm excited to grow into the developer I aspire to be.</strong>
+        </p>      
+      </>
+    ),
+    links: [
+      "https://www.coursera.org/account/accomplishments/verify/7Q6ZLQJ9611D",
+      "https://www.coursera.org/account/accomplishments/verify/JC1TU3W4B4AS",
+      "https://coursera.org/share/6a9abc96d3e07dcbede0badf0408e834",
+      "https://coursera.org/share/64e66e8e64a42f6ef51682a46414d234"
+    ]
+  }
+]

@@ -26,7 +26,7 @@ function Header({
   
           </div>
 
-          <ul className={`hidden space-x-12 bg-black/70  md:flex mt-10  px-16 py-5 rounded-lg
+          <ul className={`hidden space-x-12  md:flex mt-10  px-16 py-5 rounded-lg
               `}
             open={openMenu}
           >

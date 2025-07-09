@@ -5,6 +5,8 @@ import Header from './components/Header';
 import HomePage from './pages/Homepage';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
+import AboutMe from './pages/AboutMe';
+import Contact from './pages/Contact';
 import './App.css'
 
 
@@ -24,6 +26,9 @@ function App() {
       <HomePage />
       <Projects />
       <Skills />
+      <AboutMe />
+      <Contact />
+
     </div>
   )
 }

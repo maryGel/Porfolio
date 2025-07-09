@@ -11,15 +11,15 @@ function Projects() {
     <>
       <div  
         id="projects" 
-        className={`text-black grid grid-cols-1  rounded-lg bg-white
-          md:mx-10 pb-5
+        className={`text-black grid grid-cols-1  rounded-lg pt-2 pb-5
+          md:mx-10 md:border-none
           `}
       >
       
       {/* Projects list */}      
       <div className={`w-full animate-slide-down animation-delay-100`}>
         <h1 
-          className={`flex justify-center w-full  font-serif tracking-widest p-2 md:rounded-lg lg:text-xl lg:pt-5 bg-white text-purple-950 list-disc list-inside`}
+          className={`flex justify-center w-full font-serif tracking-widest p-2  text-purple-950 md:rounded-lg lg:text-white lg:text-xl lg:pt-5 list-disc list-inside`}
         >PROJECTS</h1>
 
         {projects.map((projectlist) => {
@@ -29,27 +29,28 @@ function Projects() {
               className={`m-6 rounded-lg bg-white shadow-2xl md:mx-5 lg:mx-10`}  
             > 
             <div 
-                className={`grid [grid-template-columns:3.5rem_1fr_3.5rem] 
-                mx-auto w-full bg-white border rounded-lg shadow-xl border-slate-300`}
+              className={`grid [grid-template-columns:3.5rem_1fr_3.5rem] 
+              mx-auto w-full bg-white border rounded-lg shadow-xl border-slate-300`}
             >  
+              <img 
+                src={projectlist.icon} 
+                className={`object-contain w-10 h-10 mx-4 my-3 md:w-12 md:h-12 md:m-4`}
+                alt="shoppic"
+              />
+              <div className='p-3 text-sm md:py-5 md:pl-8'>
+                <p className='font-semibold'>{projectlist.name}</p>
+                <p className='text-slate-600'>{projectlist.description}</p>
+              </div>
+              {/* Arrow button to toggle project details */}
+              <button className='mx-4 my-3 md:m-1 '>
                 <img 
-                  src={projectlist.icon} 
-                  className={`object-contain w-10 h-10 mx-4 my-3 md:w-12 md:h-12 md:m-4`}
-                  alt="shoppic"
-                />
-                <div className='p-3 text-sm md:py-5 md:pl-8'>
-                  <p className='font-semibold'>{projectlist.name}</p>
-                  <p className='text-slate-600'>{projectlist.description}</p>
-                </div>
-                <button className='mx-4 my-3 md:m-1 '>
-                  <img 
-                    src="./images/projects/right-arrow.png" 
-                    className={`object-contain w-5 h-5 p-1 rounded-full shadow-md bg-slate-200
-                      ${openProjectId === projectlist.id ? 'rotate-90' : ''}`}
-                    alt="arrow-icon"
-                    onClick={() => setOpenProjectId(openProjectId === projectlist.id ? null : projectlist.id)}
-                  />              
-                </button>
+                  src="./images/projects/right-arrow.png" 
+                  className={`object-contain w-5 h-5 p-1 rounded-full shadow-md bg-slate-200
+                    ${openProjectId === projectlist.id ? 'rotate-90' : ''}`}
+                  alt="arrow-icon"
+                  onClick={() => setOpenProjectId(openProjectId === projectlist.id ? null : projectlist.id)}
+                />              
+              </button>
 
             </div>
             {/* {console.log("Project ID:", projectlist.id, "| Has projects:", projectlist.projects)} */}
@@ -72,9 +73,7 @@ function Projects() {
                           >{project.title}</h1>
     
                             <button className='flex items-center justify-center gap-1 px-2 py-1 text-xs border rounded-md md:gap-2'
-                              onClick={() => {
-                                console.log('GitHub link:', project.git);
-                                window.open(project.git, '_blank')}}   
+                              onClick={() => window.open(project.git, '_blank')}   
                             >
                               Github
                               <img

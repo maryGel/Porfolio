@@ -15,7 +15,7 @@ function Skills() {
       <div className={`w-full animate-slide-down animation-delay-100 grid grid-cols-1 gap-4 p-4 lg:grid-cols-2 lg:gap-5 lg:p-5`}>
           {skills.map((skill) => {
             return (
-              <div className={`m-2 rounded-lg bg-white opacity-90 shadow-2xl md:mx-5 lg:mx-6 border border-purple-950`}>
+              <div className={`m-2 rounded-lg bg-white shadow-2xl md:mx-5 lg:mx-6 border border-purple-950`}>
                 <div>
                   <div className='flex justify-center p-2 text-base font-semibold bg-black/10 text-purple-950 lg:m-3'>
                     <p>{skill.name}</p>  
