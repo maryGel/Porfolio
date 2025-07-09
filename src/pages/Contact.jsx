@@ -21,14 +21,15 @@ function Contact() {
               <a href="mailto:caguladamaryangel@gmail.com" className='p-2 text-blue-600 underline cursor-pointer'> caguladamaryangel@gmail.com</a>
             </div>
               {/* download resume + linkedin */}
-              <div className='flex items-center justify-center gap-4 p-2 m-auto lg:gap-12'>
-                <button className='flex items-center justify-center p-1 px-3 mx-auto my-5 text-sm border border-gray-400 rounded-lg shadow-md '>
-                  <img className='w-6 h-6 ' src="./images/contact/download.png" alt="dlresume"/>
-                  <a  href="/public/files/MaryAngel_Cagulada.pdf"
-                      className='p-2 text-purple-900'
-                      download="MaryAngel_Cagulada.pdf"
-                  >Resume</a>
-                </button>
+              <div className='flex items-center justify-center gap-4 p-2 m-auto lg:gap-12'>                
+                <a 
+                  href="/files/MaryAngel_Cagulada.pdf"
+                  download="MaryAngel_Cagulada.pdf"
+                  className='flex items-center justify-center p-1 px-3 mx-auto my-5 text-sm border border-gray-400 rounded-lg shadow-md'
+                >
+                  <img className='w-6 h-6' src="./images/contact/download.png" alt="dlresume" />
+                  <p className='p-2 text-purple-900'>Resume</p>
+                </a>
                 <button className='flex items-center justify-center px-3 py-1 mx-auto cursor-pointer md:px-1 '>
                   <a href="https://www.linkedin.com/in/mary-angel-cagulada-7118122b2/" target="_blank" rel="noopener noreferrer">
                     <img className='w-10 h-10' src="./images/contact/linkedin.png" alt="linkedIn"/>
