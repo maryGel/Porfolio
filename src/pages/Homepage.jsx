@@ -25,7 +25,7 @@ function HomePage() {
             className='mt-2 font-serif text-5xl leading-relaxed md:text-2xl lg:text-5xl'
             >Hi, I'm Angel!
           </p>
-          <p className={`pt-5 lg:text-base lg:bg-black/50 leading-relaxed ${!showMore ? 'line-clamp-2' : ''}`}>{intro}</p>  
+          <p className={`pt-5 lg:text-base leading-relaxed ${!showMore ? 'line-clamp-2' : ''}`}>{intro}</p>  
           <button
             className='p-3 mt-2 font-serif text-xs text-white bg-yellow-600 hover:underline'
             onClick={() => setShowMore(prev => !prev)}

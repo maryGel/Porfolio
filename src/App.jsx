@@ -7,7 +7,7 @@ import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 import AboutMe from './pages/AboutMe';
 import Contact from './pages/Contact';
-import './App.css'
+
 
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
       
         {/* arrow up */}
         <div className='fixed z-50 bottom-5 right-5'>
-          <a href="#" className='rounded-full shadow-2xl cursor-pointer  hover:bg-gray-200'>
+          <a href="#" className='rounded-full shadow-2xl cursor-pointer hover:bg-gray-200'>
           <img className='w-12 h-12 p-3 mx-auto bg-gray-100 rounded-full cursor-pointer' src="./images/contact/upload.png" />
           </a>
         </div>  

@@ -22,7 +22,7 @@ export default {
         }
       },
       backgroundImage: {
-        'gradient-bg': "linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,.1)), url('/images/Background.jpg')",
+        'gradient-bg': "linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.1)), url('/images/Background.jpg')",
       },
       keyframes: {
         'slide-up': {
